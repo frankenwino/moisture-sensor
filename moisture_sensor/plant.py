@@ -9,7 +9,7 @@ class Plant(object):
         channel: the GPIO channel the moisture sensor is attached to.
 
     Note:
-        Using GPIO.setmode(GPIO.BOARD) instead of GPIO.setmode(GPIO.BOARD) to
+        Using GPIO.setmode(GPIO.BOARD) instead of GPIO.setmode(GPIO.BCM) to
         ensure compatibility across all Rapsberry Pis.
     """
     def __init__(self, plant_name, channel):
