@@ -1,6 +1,6 @@
 # moisture-sensor
-Detects moisture level in soil using a Raspberry Pi and moisture sensor
+Detects moisture level in soil using a Raspberry Pi and moisture sensor: https://www.modmypi.com/electronics/sensors/soil-moisture-sensor
 
-Sends email alert when no moisture is detected 
+Sends email alert when no moisture is detected.
 
-Uploads sensor output to dweet.io so you can make a dashboard on freeboard.io
+Uploads sensor output to dweet.io so you can make a dashboard on freeboard.io.
