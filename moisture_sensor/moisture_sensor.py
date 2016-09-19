@@ -20,6 +20,7 @@ from plant import Plant
 from dweeter import Dweet
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from datetime import datetime
 import config
 
 
@@ -30,6 +31,7 @@ def sendEmail(subject):
     user = config.user
     password = config.password
     smtp_server = config.smtp_server
+    smtp_port = config.smtp_port
     recipients = config.recipients
 
     if len(recipients) > 1:
@@ -87,7 +89,7 @@ def main():
     # Print out the reposne from the dweet.io api
     pprint(dweet_response)
 
-    if trinidad_scorpion.sensor_output() == 0:
+    if trinidad_scorpion.sensor_output() == 1:
         sendEmail(trinidad_scorpion.email_subject_needs_water)
     else:
         # sendEmail(trinidad_scorpion.email_subject_plant_ok)
