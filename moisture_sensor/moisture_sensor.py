@@ -1,15 +1,17 @@
 #! /usr/bin/env python3
 """
 Collects data from a moisture meter connected to a Raspberry Pi.
-Transmits that data to a dweet.io 'thing': https://dweet.io/
-    Yes, 'thing' is what dweet.io call your project
+
+Transmits that data to a dweet.io 'thing': https://dweet.io/.
+    Yes, dweet.io calls a project a 'thing'.
     You can make a dashboard that uses the dweet.io 'thing' data using
-    https://freeboard.io
+    https://freeboard.io.
+
 If the plant's moisture sensor senses no moisture, it will send an email.
 
 Sensor notes:
-    sensor output 0 = LED On i.e. moisture is detected
-    sensor output 1 = LED Off i.e. mositure is not detected
+    sensor output 0 = LED on i.e. moisture is detected.
+    sensor output 1 = LED off i.e. mositure is not detected.
 """
 
 
@@ -26,7 +28,7 @@ import config
 
 def sendEmail(subject):
     """
-    Enter your email log in crednetials and smtp server info into config.py
+    Enter your email log in credentials and smtp server info into config.py
     """
     user = config.user
     password = config.password
@@ -64,7 +66,7 @@ def main():
     """
     Initialise plant.
     Choose a name for it and enter the correct GPIO channel the moisture sensor
-    it's connected to
+    it's connected to.
     """
     trinidad_scorpion = Plant(plant_name="Trinidad Scorpion", channel=11)
 
@@ -73,13 +75,13 @@ def main():
 
     """
     Print the plant status dictionary. This will be sent to the dweet.io
-    'thing'
+    'thing'.
     """
     pprint(trinidad_scorpion_status_dict)
 
     """
     Initalise dweeter with the dweet.io 'thing' name and the plant status
-    data to be sent to the dweet.io 'thing'
+    data to be sent to the dweet.io 'thing'.
     """
     trinidad_scorpion_dweeter = Dweet(dweet_io_thing=dweet_io_thing, payload=trinidad_scorpion_status_dict)
 
