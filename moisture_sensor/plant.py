@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO # https://sourceforge.net/p/raspberry-gpio-python/wiki/install/
 
 
 class Plant(object):
