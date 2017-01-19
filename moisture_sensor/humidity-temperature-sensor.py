@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-import Adafruit_DHT
+import Adafruit_DHT # https://github.com/adafruit/Adafruit_Python_DHT
 from pprint import pprint
 from dweeter import Dweet
 import uuid
