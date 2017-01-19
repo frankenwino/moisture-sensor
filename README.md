@@ -1,5 +1,6 @@
 # moisture-sensor
 - Detects moisture level in soil using a moisture sensor.
+- Detects air temperature and humidity using a temp/humidity sensor
 - Sends email alert when no moisture is detected.
 - Uploads humidity/temperature sensor output to dweet.io so you can make a dashboard on freeboard.io.
 
