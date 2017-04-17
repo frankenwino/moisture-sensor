@@ -7,8 +7,10 @@
 Equipment:
 * Raspberry Pi
 * Soil moisture sensor: https://www.modmypi.com/electronics/sensors/soil-moisture-sensor
+  * Tutorial: https://www.modmypi.com/blog/raspberry-pi-plant-pot-moisture-sensor-with-email-notification-tutorial
+  * Driver: https://github.com/modmypi/Moisture-Sensor/
 * Temperature and humidity sensor: https://www.adafruit.com/products/393
-  * https://github.com/adafruit/Adafruit_Python_DHT
+  * Driver: https://github.com/adafruit/Adafruit_Python_DHT
 
 Third pary services used:
 * Freeboard: https://freeboard.io/
