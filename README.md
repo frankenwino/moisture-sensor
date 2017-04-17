@@ -1,14 +1,15 @@
 # moisture-sensor
-- Detects moisture level in soil using a moisture sensor.
-- Detects air temperature and humidity using a temp/humidity sensor
-- Sends email alert when no moisture is detected.
-- Uploads humidity/temperature sensor output to dweet.io so you can make a dashboard on freeboard.io.
+* Detects moisture level in soil using a moisture sensor.
+* Detects air temperature and humidity using a temp/humidity sensor
+* Sends email alert when no moisture is detected.
+* Uploads humidity/temperature sensor output to dweet.io so you can make a dashboard on freeboard.io.
 
 Equipment:
-- Raspberry Pi
-- Soil moisture sensor: https://www.modmypi.com/electronics/sensors/soil-moisture-sensor
-- Temperature and humidity sensor: https://www.adafruit.com/products/393
+* Raspberry Pi
+* Soil moisture sensor: https://www.modmypi.com/electronics/sensors/soil-moisture-sensor
+* Temperature and humidity sensor: https://www.adafruit.com/products/393
+  * https://github.com/adafruit/Adafruit_Python_DHT
 
 Third pary services used:
-- Freeboard: https://freeboard.io/
-- Dweet API: http://dweet.io/
+* Freeboard: https://freeboard.io/
+* Dweet API: http://dweet.io/
